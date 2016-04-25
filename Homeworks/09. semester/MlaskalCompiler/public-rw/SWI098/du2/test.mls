@@ -1,0 +1,4 @@
+program du2test2;
+begin
+    i := 2940387297643256437;
+end.

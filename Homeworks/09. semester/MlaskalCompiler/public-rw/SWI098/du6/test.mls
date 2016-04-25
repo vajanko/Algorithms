@@ -1,0 +1,18 @@
+program du4test1;
+{label 1;}
+type arr1 = array[1..2, 3..4] of integer;
+	 arr2 = array[3..4] of integer;
+var a1 : arr1;
+	a2 : arr2;
+	a3 : arr2;
+	i : integer;
+procedure set(var a: arr2; i,val:integer);
+begin
+	a[i] := val;
+end;
+begin
+	for i:= 3 to 4 do
+		set(a2,i,i);
+	for i:=3 to 4 do
+		writei(a2[i]);
+end.
